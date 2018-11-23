@@ -2,6 +2,10 @@
 
 > A holiday booking app built with VueJs
 
+# Extra Information
+
+> The essence of listing the features under each package is to influence the decision-making of whoever intends to book a package. The FAQ and the Testimonial Sections were added for the same reason because one way or the other, these information affect a visitor as to whether or not the booking site is reliable, whether the packages are actually worth it, etc.
+
 ## Build Setup
 
 ``` bash
