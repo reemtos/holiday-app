@@ -1,0 +1,49 @@
+.package {
+    position: relative;
+}
+
+.section {
+    
+    &__intro {
+        background-size: cover;
+        background-position: top;
+        height: 60vh;
+        position: relative;
+        
+        .intro {
+            
+            &-section {
+                bottom: calc(100vh - 90vh);
+                color: $color-white;
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+            
+            &-phrase {
+                margin-bottom: 1.5rem;
+            }
+            
+            &-paraphrase {
+                color: $color-white-quiet;
+                font-size: 2.2rem;
+                font-weight: 500;
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+    
+    &__slideshow {
+        background-color: $color-primary-quite;
+    }
+    
+    &__package-info {
+        background-color: $color-white;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        .cta {
+            margin-top: 4rem;
+        }
+    }
+}

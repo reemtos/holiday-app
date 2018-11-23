@@ -1,0 +1,51 @@
+.slide {
+    height: 60rem;
+    
+    @include respond(medium) {
+        height: 50rem;
+    }
+    
+    @include respond(small) {
+        height: 40rem;
+    }
+    
+    @include respond(smaller) {
+        height: 30rem;
+    }
+    
+    &__image {
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.VueCarousel-dot {
+    
+    @include respond(small) {
+        padding: 0.5rem !important;
+    }
+    
+    &-button {
+        background-color: $color-dark-mute !important;
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+        
+        @include respond(small) {
+            height: 1rem !important;
+            width: 1rem !important;
+        }
+        
+        &:focus {
+            outline: none !important;
+        }
+    }
+    
+    &--active {
+        
+        .VueCarousel-dot-button {
+            background-color: $color-black !important;
+        }
+    }
+}
