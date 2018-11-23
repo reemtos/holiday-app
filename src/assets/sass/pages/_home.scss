@@ -1,0 +1,135 @@
+.home {
+    position: relative;
+}
+
+.section {
+    
+    &__hero {
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        position: relative;
+        
+        .bg-video {
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -2;
+        
+            &__content {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        
+        .intro {
+            
+            &-section {
+                bottom: calc(100vh - 90vh);
+                color: $color-white;
+                left: 0;
+                padding: 0 2rem;
+                position: absolute;
+                width: 100%;
+            }
+            
+            &-phrase {
+                margin-bottom: 1.5rem;
+            }
+            
+            &-paraphrase {
+                color: $color-white-quiet;
+                font-size: 2.2rem;
+                font-weight: 500;
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+    
+    &__packages {
+        background-color: $color-primary-quite;
+        
+        .packages {
+            align-items: stretch;
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0 0;
+            
+            @include respond(small) {
+                align-items: center;
+                flex-direction: column;
+                margin: 1rem 0 0;
+            }
+        }
+        
+        .package {
+            background-color: $color-white;
+            margin: 1rem;
+            padding: 3rem 4rem 4rem;
+            text-align: left;
+            max-width: 35rem;
+            
+            @include respond(small) {
+                margin: 2rem 0 0;
+                max-width: unset;
+                width: 80%;
+                padding: 2rem 3rem 3rem;
+            }
+            
+            @include respond(smaller) {
+                width: 100%;
+            }
+        }
+    }
+    
+    &__faq {
+        background-color: $color-white;
+        
+        .faqs {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 3rem;
+            
+            @include respond(small) {
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        
+        .faq {
+            max-width: 50%;
+            padding: 1rem;
+            
+            @include respond(small) {
+                max-width: 100%;
+                padding: 0 0 1.5rem;
+            }
+            
+            .details {
+                background-color: $color-primary-silent;
+                height: 100%;
+                padding: 2.5rem 3rem 3rem;
+                transition: background-color 0.7s ease;
+                width: 100%;
+                
+                @include respond(small) {
+                    padding: 2rem 2.5rem 2.5rem;
+                }
+                
+                &:hover {
+                    background-color: $color-primary-quite;
+                }
+            }
+        }
+    }
+    
+    &__testimonial {
+        background-color: $color-primary-quite;
+    }
+}

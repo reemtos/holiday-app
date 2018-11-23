@@ -1,0 +1,45 @@
+.testimonials {
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+            
+    @include respond(small) {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.testimonial {
+    background-color: $color-white;
+    margin: 1rem;
+    max-width: 50%;
+    padding: 3rem 4rem 4rem;
+    text-align: left;
+    width: 45rem;
+            
+    @include respond(small) {
+        max-width: 100%;
+        padding: 2rem 3rem 3rem;
+        width: 100%;
+    }
+    
+    .person {
+        align-items: center;
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .avatar-box {
+        height: 3.5rem;
+        margin-right: 1.5rem;
+        width: 3.5rem;
+    }
+    
+    .name {
+        color: $color-dark-quite;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+}
